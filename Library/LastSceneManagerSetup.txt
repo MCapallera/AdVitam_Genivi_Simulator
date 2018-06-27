@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Environment_Yosemite.unity
+  isLoaded: 1
+  isActive: 1

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{598C1757-EF40-AE91-4EF0-C882ADF5CC02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Audio\CollisionAudio.cs" />
+     <Compile Include="Assets\Scripts\Audio\EngineAudio.cs" />
+     <Compile Include="Assets\Scripts\Audio\IgnitionAudio.cs" />
+     <Compile Include="Assets\Scripts\Audio\RoadAudio.cs" />
+     <Compile Include="Assets\Scripts\Audio\VehicleAudio.cs" />
+     <Compile Include="Assets\Scripts\Audio\VehicleAudioController.cs" />
+     <Compile Include="Assets\Scripts\Audio\VehicleAudioTester.cs" />
+     <Compile Include="Assets\Scripts\Audio\WindAudio.cs" />
+     <Compile Include="Assets\Scripts\Build&amp;Dev\AppSettings.cs" />
+     <Compile Include="Assets\Scripts\Build&amp;Dev\LoadApp.cs" />
+     <Compile Include="Assets\Scripts\Build&amp;Dev\ShowBuild.cs" />
+     <Compile Include="Assets\Scripts\Build&amp;Dev\ShowControls.cs" />
+     <Compile Include="Assets\Scripts\Build&amp;Dev\ShowFPS.cs" />
+     <Compile Include="Assets\Scripts\ControllerScripts\BearController.cs" />
+     <Compile Include="Assets\Scripts\ControllerScripts\CanineController.cs" />
+     <Compile Include="Assets\Scripts\ControllerScripts\MaleAvatarController.cs" />
+     <Compile Include="Assets\Scripts\ControllerScripts\StagController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\AppController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\AudioController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\BaseSelectController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\BrandSelectController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\CarSelectController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\EnvironmentSelectController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\GarageExitController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MasterSelectController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\NetworkController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\RemoteAdminController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\RoadSideSelectController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\TrackController.cs" />
+     <Compile Include="Assets\Scripts\Driving\CarAutoPath.cs" />
+     <Compile Include="Assets\Scripts\Driving\CarExternalInputAutoPathAdvanced.cs" />
+     <Compile Include="Assets\Scripts\Driving\CarHeadlights.cs" />
+     <Compile Include="Assets\Scripts\Driving\DriverCamera.cs" />
+     <Compile Include="Assets\Scripts\Driving\InfractionRecorder.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafAIMotor.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafFourWayStop.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafIntersection.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafIntersectionEditNode.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafPCH.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafRoad.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafSpawner.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafSpawnerPCH.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafSystem.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafSystemData.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafWheelsPCH.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafficLoop.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafficPath.cs" />
+     <Compile Include="Assets\Scripts\Driving\TrafficRoad.cs" />
+     <Compile Include="Assets\Scripts\Driving\VehicleConfigurator.cs" />
+     <Compile Include="Assets\Scripts\Effects\BridgeLights.cs" />
+     <Compile Include="Assets\Scripts\Effects\BuildingLights.cs" />
+     <Compile Include="Assets\Scripts\Effects\CookieStreetLights.cs" />
+     <Compile Include="Assets\Scripts\Effects\DayNightEventListener.cs" />
+     <Compile Include="Assets\Scripts\Effects\DayNightEvents.cs" />
+     <Compile Include="Assets\Scripts\Effects\StreetLight.cs" />
+     <Compile Include="Assets\Scripts\Effects\TerrainWetness.cs" />
+     <Compile Include="Assets\Scripts\Effects\TrafficLightVisuals.cs" />
+     <Compile Include="Assets\Scripts\Effects\WetRoads.cs" />
+     <Compile Include="Assets\Scripts\Input\AdminInputController.cs" />
+     <Compile Include="Assets\Scripts\Input\ForceFeedback.cs" />
+     <Compile Include="Assets\Scripts\Input\InputController.cs" />
+     <Compile Include="Assets\Scripts\Input\KeyboardInputController.cs" />
+     <Compile Include="Assets\Scripts\Input\PedalInputController.cs" />
+     <Compile Include="Assets\Scripts\Input\SelectScreenForceFeedback.cs" />
+     <Compile Include="Assets\Scripts\Input\SteeringWheelInputController.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\AnimalObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\BaseObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\ExampleObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\OLD\BallObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\OLD\BoulderObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\OLD\CarObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\OLD\RockfallObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\OLD\TreeObstacle.cs" />
+     <Compile Include="Assets\Scripts\Roads\RoadPath.cs" />
+     <Compile Include="Assets\Scripts\Traffic\DrawPathLine.cs" />
+     <Compile Include="Assets\Scripts\Traffic\DrawWaypointGizmos.cs" />
+     <Compile Include="Assets\Scripts\Traffic\IntersectionPath.cs" />
+     <Compile Include="Assets\Scripts\Traffic\RedLightInfractionWatcher.cs" />
+     <Compile Include="Assets\Scripts\Traffic\RoadPaths\TrafficIntersection.cs" />
+     <Compile Include="Assets\Scripts\Traffic\RoadPaths\TrafficPathNode.cs" />
+     <Compile Include="Assets\Scripts\Traffic\RoadPaths\TrafficPathRoad.cs" />
+     <Compile Include="Assets\Scripts\Traffic\RoadPaths\TrafficRoadPath.cs" />
+     <Compile Include="Assets\Scripts\Traffic\TrafWheels.cs" />
+     <Compile Include="Assets\Scripts\Traffic\TrafficLight.cs" />
+     <Compile Include="Assets\Scripts\Traffic\TrafficLightContainer.cs" />
+     <Compile Include="Assets\Scripts\Traffic\TrafficLightState.cs" />
+     <Compile Include="Assets\Scripts\Traffic\TrafficLightStop.cs" />
+     <Compile Include="Assets\Scripts\Traffic\WheelAlignment.cs" />
+     <Compile Include="Assets\Scripts\UI\AdminScreen.cs" />
+     <Compile Include="Assets\Scripts\UI\CarConsole.cs" />
+     <Compile Include="Assets\Scripts\UI\CarConsoleController.cs" />
+     <Compile Include="Assets\Scripts\UI\CarSelectIndicator.cs" />
+     <Compile Include="Assets\Scripts\UI\DriveAdminUI.cs" />
+     <Compile Include="Assets\Scripts\UI\DriveAdminUISettings.cs" />
+     <Compile Include="Assets\Scripts\UI\DriveMap.cs" />
+     <Compile Include="Assets\Scripts\UI\DriveSceneAdmin.cs" />
+     <Compile Include="Assets\Scripts\UI\InfractionReviewUI.cs" />
+     <Compile Include="Assets\Scripts\UI\NetworkedCarConsole.cs" />
+     <Compile Include="Assets\Scripts\UI\NewAdminScreen.cs" />
+     <Compile Include="Assets\Scripts\UI\RotateCarOnCarousel.cs" />
+     <Compile Include="Assets\Scripts\UI\SelectAdminUI.cs" />
+     <Compile Include="Assets\Scripts\UI\SelectScreenAdmin.cs" />
+     <Compile Include="Assets\Scripts\UI\TextMPHDisplay.cs" />
+     <Compile Include="Assets\Scripts\UI\Util\InputFieldSetDefaults.cs" />
+     <Compile Include="Assets\Scripts\UI\Util\OnGUIScaler.cs" />
+     <Compile Include="Assets\Scripts\Util\ActivateOnProjector.cs" />
+     <Compile Include="Assets\Scripts\Util\AllRendererAlphaFade.cs" />
+     <Compile Include="Assets\Scripts\Util\BaseAlphaFade.cs" />
+     <Compile Include="Assets\Scripts\Util\BaseController.cs" />
+     <Compile Include="Assets\Scripts\Util\CamFixTo.cs" />
+     <Compile Include="Assets\Scripts\Util\CamSmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\Util\CopyFormat.cs" />
+     <Compile Include="Assets\Scripts\Util\DontDestroyOnLoadDriving.cs" />
+     <Compile Include="Assets\Scripts\Util\Functional.cs" />
+     <Compile Include="Assets\Scripts\Util\GUITextureMatchPosition.cs" />
+     <Compile Include="Assets\Scripts\Util\GuiTextAlphaFade.cs" />
+     <Compile Include="Assets\Scripts\Util\GuiTextColorFade.cs" />
+     <Compile Include="Assets\Scripts\Util\GuiTextureAlphaFade.cs" />
+     <Compile Include="Assets\Scripts\Util\GuiTextureColorFade.cs" />
+     <Compile Include="Assets\Scripts\Util\GuiTexturePositionTween.cs" />
+     <Compile Include="Assets\Scripts\Util\HermiteMath.cs" />
+     <Compile Include="Assets\Scripts\Util\MoveToTarget.cs" />
+     <Compile Include="Assets\Scripts\Util\MoveToTargetLocal.cs" />
+     <Compile Include="Assets\Scripts\Util\NewSceneOnLoad.cs" />
+     <Compile Include="Assets\Scripts\Util\OnBecameVisiblePass.cs" />
+     <Compile Include="Assets\Scripts\Util\OnGUITexture.cs" />
+     <Compile Include="Assets\Scripts\Util\OrbitAround.cs" />
+     <Compile Include="Assets\Scripts\Util\PerLayerFarCullDistance.cs" />
+     <Compile Include="Assets\Scripts\Util\RendererAlphaFade.cs" />
+     <Compile Include="Assets\Scripts\Util\ResizeUI.cs" />
+     <Compile Include="Assets\Scripts\Util\RotateToTarget.cs" />
+     <Compile Include="Assets\Scripts\Util\SetFoleyVolume.cs" />
+     <Compile Include="Assets\Scripts\Util\SetMusicVolume.cs" />
+     <Compile Include="Assets\Scripts\Util\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Util\SplinePath.cs" />
+     <Compile Include="Assets\Scripts\Util\UnitySingleton.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\CANDataCollector - Copie.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\CANDataCollector.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\CANDataWrite.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\DataStreamListener.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\DataStreamServer.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\VehicleController.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\VehicleInfo.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\VehicleInputController.cs" />
+     <Compile Include="Assets\Scripts\Vehicle\VehiclePathController.cs" />
+     <Compile Include="Assets\_Workspaces\Danny\Controls.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\ConstantRotate.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\CopyToScreenRT.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\DirectPlayer.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\LaunchScreen.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\SurroundTest.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\TestSS.cs" />
+     <Compile Include="Assets\_Workspaces\Simon\WheelTest.cs" />
+     <None Include="Assets\_Workspaces\ThomasP\SanFrancisco\Prefabs\SF Shader\TomColorize.shader" />
+     <None Include="Assets\Shaders\RoadWetAndDry.shader" />
+     <None Include="Assets\Shaders\Normal-Diffuse-Offset.shader" />
+     <None Include="Assets\StreamingAssets\SavedPresets\XE_old-and-busted.xml" />
+     <None Include="Assets\StreamingAssets\SavedPresets\L405.xml" />
+     <None Include="Assets\StreamingAssets\SavedPresets\MiscSettings.xml" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Shaders\Illumin-Diffuse-Offset.shader" />
+     <None Include="Assets\Shaders\BuildingWindowLights.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Plugins\Websockets\LICENSE.txt" />
+     <None Include="Assets\Shaders\CarHeadLights.shader" />
+     <None Include="Assets\StreamingAssets\SavedPresets\XE.xml" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Shaders\CarTailLights.shader" />
+     <None Include="Assets\StreamingAssets\SavedPresets\MiscSettings_Backup.xml" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Shaders\CarHazardLights.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/marine.capaller/Desktop/GENIVI 2/genivi-vehicle-simulator/genivi-vehicle-simulator/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>C:/Users/marine.capaller/Desktop/GENIVI 2/genivi-vehicle-simulator/genivi-vehicle-simulator/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>C:/Users/marine.capaller/Desktop/GENIVI 2/genivi-vehicle-simulator/genivi-vehicle-simulator/Assets/Plugins/Websockets/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{A5665DFC-7D32-E436-A54A-A3E4DD1B7955}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
