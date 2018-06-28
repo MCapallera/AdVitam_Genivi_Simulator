@@ -75,7 +75,7 @@ public struct FullDataFrame
     {
         return string.Format(
             "EngineSpeed, {1:F4}, {0}\n" +
-			"VehicleSpeed, {2:F4}, {0}\n"+ "Mode, {3}\n", time, rpm, vehicleSpeed, autoPilot); //Marine ajout igne pour mode autoPilot
+			"VehicleSpeed, {2:F4}, {0}\n"+ "Mode, {3}\n", time, rpm, vehicleSpeed, autoPilot); //Marine ajout ligne pour mode autoPilot
     }
 }
 
